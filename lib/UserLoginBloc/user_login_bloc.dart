@@ -19,7 +19,7 @@ class UserLoginBloc extends Bloc<UserLoginEvent, UserLoginState> {
           sliderFontSize: event.payLoad);
     } else if (event is Bold) {
       yield NewSettingState.fromOldSettingState(state, isBold: event.payLoad);
-    } else if (event is Bold) {
+    } else if (event is Italic) {
       yield NewSettingState.fromOldSettingState(state, isItalic: event.payLoad);
     }
   }
