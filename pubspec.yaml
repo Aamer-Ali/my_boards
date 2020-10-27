@@ -19,14 +19,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  bloc: ^6.1.0
-  flutter_bloc: ^6.0.6
-  retrofit: any
+  bloc:
+  flutter_bloc:
+  retrofit:
   cupertino_icons: ^0.1.2
-  json_annotation: ^3.1.0
-  logger: ^0.9.4
-  pretty_dio_logger: ^1.1.1
+  json_annotation:
+  logger:
+  pretty_dio_logger:
   freezed_annotation:
+  provider:
 
 
 
@@ -35,6 +36,7 @@ dev_dependencies:
     sdk: flutter
   retrofit_generator: any
   build_runner: any
+  freezed:
 
 
 # For information on the generic Dart part of this file, see the

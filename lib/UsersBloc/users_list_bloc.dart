@@ -1,9 +1,5 @@
 import 'dart:async';
-
 import 'package:bloc/bloc.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:meta/meta.dart';
-
 import 'bloc.dart';
 
 class UsersListBloc extends Bloc<UsersListEvent, UsersListState> {
