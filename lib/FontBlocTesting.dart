@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_boards/UserLoginBloc/user_login_bloc.dart';
 
+import 'UserLoginBloc/user_login_bloc.dart';
+import 'UserLoginBloc/user_login_bloc.dart';
+
 //
 // class FontBlocTesting extends StatefulWidget {
 //   @override
@@ -141,13 +144,11 @@ class FontBlocTesting extends StatelessWidget {
               Text(
                 "This is Going to be the text which is goint to change its properties onthe basis of the above given toggles...",
                 style: TextStyle(
-                    fontStyle: _currentIsItalicValue
-                        ? FontStyle.italic
-                        : FontStyle.normal,
+                    fontStyle:
+                        state.isItalic ? FontStyle.italic : FontStyle.normal,
                     fontSize: state.sliderFontSize,
-                    fontWeight: _currentIsBoldValue
-                        ? FontWeight.bold
-                        : FontWeight.normal),
+                    fontWeight:
+                        state.isBold ? FontWeight.bold : FontWeight.normal),
               ),
             ],
           ),
